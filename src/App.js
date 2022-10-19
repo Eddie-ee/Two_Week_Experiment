@@ -11,23 +11,27 @@ function App() {
         <div>
           <img
             src="https://i.postimg.cc/nzZjM1zF/dunebook.jpg"
-            alt="Picture of Dune book"
+            alt="picture of Dune book"
           />
           <img
             src="https://i.postimg.cc/zGF18w9S/behave-Book.jpg"
-            alt="Picture of Behave book"
+            alt="picture of Behave book"
           />
         </div>
         <h2>Completed</h2>
-        <h2>Read Again</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <img
+            src="https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg"
+            alt="picture of Four Thousand Weeks book"
+          />
+        </div>
+        <h2>To Read</h2>
+        <div>
+          <img
+            src="https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg"
+            alt="picture of Sprint book"
+          />
+        </div>
       </header>
     </div>
   );
