@@ -11,25 +11,25 @@ function App() {
         <div>
           <img
             src="https://i.postimg.cc/nzZjM1zF/dunebook.jpg"
-            alt="picture of Dune book"
+            alt="Dune book"
           />
           <img
             src="https://i.postimg.cc/zGF18w9S/behave-Book.jpg"
-            alt="picture of Behave book"
+            alt="Behave book"
           />
         </div>
         <h2>Completed</h2>
         <div>
           <img
             src="https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg"
-            alt="picture of Four Thousand Weeks book"
+            alt="Four Thousand Weeks book"
           />
         </div>
         <h2>To Read</h2>
         <div>
           <img
             src="https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg"
-            alt="picture of Sprint book"
+            alt="Sprint book"
           />
         </div>
       </header>
