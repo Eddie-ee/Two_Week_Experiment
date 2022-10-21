@@ -1,35 +1,33 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Book App</h1>
         <h2>What I'm Reading</h2>
         <div>
           <img
             src="https://i.postimg.cc/nzZjM1zF/dunebook.jpg"
-            alt="Dune book"
+            alt="Dune_book"
           />
           <img
             src="https://i.postimg.cc/zGF18w9S/behave-Book.jpg"
-            alt="Behave book"
+            alt="Behave_book"
           />
         </div>
         <h2>Completed</h2>
         <div>
           <img
             src="https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg"
-            alt="Four Thousand Weeks book"
+            alt="four_thousand_weeks_book"
           />
         </div>
         <h2>To Read</h2>
         <div>
           <img
             src="https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg"
-            alt="Sprint book"
+            alt="Sprint_book"
           />
         </div>
       </header>
