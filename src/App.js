@@ -1,17 +1,16 @@
 import "./App.css";
-
-
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import Container from "./Container";
 
 function App() {
   return (
     <div className="App">
-
       //from HERE
       <DndProvider backend={HTML5Backend}>
-        <Example />
+        <Container />
       </DndProvider>
       //to HERE
-
       <header className="App-header">
         <h1>Book App</h1>
         <h2>Reading</h2>

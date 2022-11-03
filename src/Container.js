@@ -4,7 +4,7 @@ import { Card } from "./Card.js";
 const style = {
   width: 400,
 };
-export const Container = () => {
+const Container = () => {
   {
     const [cards, setCards] = useState([
       {
@@ -64,3 +64,5 @@ export const Container = () => {
     );
   }
 };
+
+export default Container;
