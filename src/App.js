@@ -3,14 +3,17 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Container from "./Container";
 
+let bookDune;
+bookDune = "dune";
+
 function App() {
   return (
     <div className="App">
       <DndProvider backend={HTML5Backend}>
+        <header className="App-header">
+          <h1>Book App</h1>
+        </header>
         <Container />
-      </DndProvider>
-      <header className="App-header">
-        <h1>Book App</h1>
         <h2>Reading</h2>
         <form action="App">
           <div>
@@ -62,7 +65,7 @@ function App() {
             />
           </div>
         </form>
-      </header>
+      </DndProvider>
     </div>
   );
 }

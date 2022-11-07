@@ -9,19 +9,22 @@ const Container = () => {
     const [cards, setCards] = useState([
       {
         id: 1,
-        text: "Write a cool JS library",
+        text: "dune",
       },
+
+      
+
       {
         id: 2,
-        text: "Make it generic enough",
+        text: "Behave",
       },
       {
         id: 3,
-        text: "Write README",
+        text: "4000 Weeks",
       },
       {
         id: 4,
-        text: "Create some examples",
+        text: "Sprint",
       },
     ]);
     const moveCard = useCallback((dragIndex, hoverIndex) => {

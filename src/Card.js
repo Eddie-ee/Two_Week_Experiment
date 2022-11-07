@@ -7,6 +7,7 @@ const style = {
   marginBottom: ".5rem",
   backgroundColor: "white",
   cursor: "move",
+  
 };
 export const Card = ({ id, text, index, moveCard }) => {
   const ref = useRef(null);
