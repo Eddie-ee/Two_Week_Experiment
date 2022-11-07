@@ -9,7 +9,7 @@ const Container = () => {
     const [cards, setCards] = useState([
       {
         id: 1,
-        text: "dune",
+        text: "Dune",
       },
 
       
