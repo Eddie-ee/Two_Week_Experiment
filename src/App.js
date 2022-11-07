@@ -6,11 +6,9 @@ import Container from "./Container";
 function App() {
   return (
     <div className="App">
-      //from HERE
       <DndProvider backend={HTML5Backend}>
         <Container />
       </DndProvider>
-      //to HERE
       <header className="App-header">
         <h1>Book App</h1>
         <h2>Reading</h2>
