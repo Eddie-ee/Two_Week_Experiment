@@ -2,9 +2,7 @@ import "./App.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Container from "./Container";
-//continue here! get img into a variable!
-let bookDune;
-bookDune = "dune";
+
 
 function App() {
   return (
@@ -12,9 +10,10 @@ function App() {
       <DndProvider backend={HTML5Backend}>
         <header className="App-header">
           <h1>Book App</h1>
-          <h2>Reading</h2>
         </header>
         <body>
+          <h2>Reading</h2>
+
           <Container />
           <form action="App">
             <div>

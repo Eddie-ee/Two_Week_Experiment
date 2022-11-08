@@ -11,9 +11,6 @@ const Container = () => {
         id: 1,
         text: "Dune",
       },
-
-      
-
       {
         id: 2,
         text: "Behave",
