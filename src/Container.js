@@ -15,22 +15,17 @@ const Container = () => {
       {
         id: 2,
         title: "Behave",
-        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+        url: "https://i.postimg.cc/zGF18w9S/behave-Book.jpg",
       },
       {
         id: 3,
         title: "4000 Weeks",
-        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+        url: "https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg",
       },
       {
         id: 4,
         title: "Sprint",
-        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
-      },
-      {
-        id: 5,
-        title: "Eddy se beste boek",
-        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+        url: "https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg",
       },
     ]);
     const moveCard = useCallback((dragIndex, hoverIndex) => {

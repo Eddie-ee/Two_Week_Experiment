@@ -2,7 +2,6 @@ import "./App.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Container from "./Container";
-import Book from "./book.component";
 
 function App() {
   const books = [
@@ -33,9 +32,7 @@ function App() {
 
         <Container />
       </DndProvider>
-      {books.map((bookObject) => {
-        return <Book bookProperty={{ title: "test", author: "book test" }} />;
-      })}
+      
     </div>
   );
 }
