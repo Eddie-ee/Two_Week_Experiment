@@ -2,14 +2,12 @@ import { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { ItemTypes } from "./ItemTypes.js";
 const style = {
-  border: "1px dashed gray",
   padding: "0.5rem 1rem",
   marginBottom: ".5rem",
   backgroundColor: "white",
   cursor: "move",
-  
 };
-export const Card = ({ id, text, index, moveCard }) => {
+export const Card = ({ id, book, index, moveCard }) => {
   const ref = useRef(null);
   const [{ handlerId }, drop] = useDrop({
     accept: ItemTypes.CARD,
@@ -70,7 +68,8 @@ export const Card = ({ id, text, index, moveCard }) => {
   drag(drop(ref));
   return (
     <div ref={ref} style={{ ...style, opacity }} data-handler-id={handlerId}>
-      {text}
+      <img src={book.url} />
+      <span>{book.title}</span>
     </div>
   );
 };

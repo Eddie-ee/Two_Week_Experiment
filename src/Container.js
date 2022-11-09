@@ -6,22 +6,31 @@ const style = {
 };
 const Container = () => {
   {
-    const [cards, setCards] = useState([
+    const [books, setCards] = useState([
       {
         id: 1,
-        text: "Dune",
+        title: "Dune",
+        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
       },
       {
         id: 2,
-        text: "Behave",
+        title: "Behave",
+        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
       },
       {
         id: 3,
-        text: "4000 Weeks",
+        title: "4000 Weeks",
+        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
       },
       {
         id: 4,
-        text: "Sprint",
+        title: "Sprint",
+        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+      },
+      {
+        id: 5,
+        title: "Eddy se beste boek",
+        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
       },
     ]);
     const moveCard = useCallback((dragIndex, hoverIndex) => {
@@ -34,20 +43,20 @@ const Container = () => {
         })
       );
     }, []);
-    const renderCard = useCallback((card, index) => {
+    const renderCard = useCallback((book, index) => {
       return (
         <Card
-          key={card.id}
+          key={book.id}
           index={index}
-          id={card.id}
-          text={card.text}
+          id={book.id}
           moveCard={moveCard}
+          book={book}
         />
       );
     }, []);
     return (
       <>
-        <div style={style}>{cards.map((card, i) => renderCard(card, i))}</div>
+        <div style={style}>{books.map((book, i) => renderCard(book, i))}</div>
       </>
     );
   }

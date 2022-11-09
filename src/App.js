@@ -2,71 +2,40 @@ import "./App.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Container from "./Container";
-
+import Book from "./book.component";
 
 function App() {
+  const books = [
+    {
+      id: 1,
+      title: "Dune",
+      image: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+      isbn: "12345678732345678",
+      author: "Jan Pen",
+      cover: "test",
+    },
+    {
+      id: 2,
+      title: "Harry Potter",
+      image: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+      isbn: "12345678732345678",
+      author: "JK Pen",
+    },
+  ];
   return (
     <div className="App">
       <DndProvider backend={HTML5Backend}>
         <header className="App-header">
           <h1>Book App</h1>
         </header>
-        <body>
-          <h2>Reading</h2>
 
-          <Container />
-          <form action="App">
-            <div>
-              <label htmlFor="dune"></label>
-              <input
-                type="image"
-                src="https://i.postimg.cc/nzZjM1zF/dunebook.jpg"
-                alt="Dune_book"
-                id="dune"
-              />
-            </div>
-          </form>
-          <br />
+        <h2>Reading</h2>
 
-          <form action="App">
-            <div>
-              <label htmlFor="behave"></label>
-              <input
-                type="image"
-                src="https://i.postimg.cc/zGF18w9S/behave-Book.jpg"
-                alt="Behave_book"
-                id="behave"
-              />
-            </div>
-          </form>
-
-          <h2>Completed</h2>
-          <form action="App">
-            <div>
-              <label htmlFor="weeks"></label>
-              <input
-                type="image"
-                src="https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg"
-                alt="four_thousand_weeks_book"
-                id="weeks"
-              />
-            </div>
-          </form>
-
-          <h2>To Read</h2>
-          <form action="App">
-            <div>
-              <label htmlFor="sprint"></label>
-              <input
-                type="image"
-                src="https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg"
-                alt="Sprint_book"
-                id="sprint"
-              />
-            </div>
-          </form>
-        </body>
+        <Container />
       </DndProvider>
+      {books.map((bookObject) => {
+        return <Book bookProperty={{ title: "test", author: "book test" }} />;
+      })}
     </div>
   );
 }
