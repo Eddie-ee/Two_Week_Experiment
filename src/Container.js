@@ -3,6 +3,8 @@ import { useCallback, useState } from "react";
 import { Card } from "./Card.js";
 const style = {
   width: 400,
+  
+  
 };
 const Container = () => {
   {
