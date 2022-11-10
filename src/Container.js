@@ -17,22 +17,14 @@ const Container = () => {
         title: "Behave",
         url: "https://i.postimg.cc/zGF18w9S/behave-Book.jpg",
       },
-      {
-        id: 3,
-        title: "4000 Weeks",
-        url: "https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg",
-      },
-      {
-        id: 4,
-        title: "Sprint",
-        url: "https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg",
-      },
+      
+      
     ]);
     const [haveBooks, setHave] = useState([
       {
         id: 1,
-        title: "Harry Potter",
-        url: "https://i.postimg.cc/nzZjM1zF/harryPotter.jpg",
+        title: "4000 Weeks",
+        url: "https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg",
       },
     ]);
     const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {

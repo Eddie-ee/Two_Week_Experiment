@@ -28,7 +28,6 @@ function App() {
           <h1>Book App</h1>
         </header>
 
-        <h2>Reading</h2>
 
         <Container />
       </DndProvider>
