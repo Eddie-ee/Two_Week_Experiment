@@ -61,11 +61,11 @@ const Container = () => {
     }, []);
     return (
       <>
-        <h3>Reading now</h3>
+        <h2>Reading now</h2>
         <div style={style}>
           {currentBooks.map((book, i) => renderCard(book, i, moveCurrentCard))}
         </div>
-        <h3>Have read</h3>
+        <h2>Have read</h2>
         <div style={style}>
           {haveBooks.map((book, i) => renderCard(book, i, moveHaveCard))}
         </div>
