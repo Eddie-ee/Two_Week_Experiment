@@ -6,7 +6,7 @@ const style = {
 };
 const Container = () => {
   {
-    const [books, setCards] = useState([
+    const [currentBooks, setCurrent] = useState([
       {
         id: 1,
         title: "Dune",
@@ -28,8 +28,15 @@ const Container = () => {
         url: "https://i.postimg.cc/BZc1KR9x/sprint-Book.jpg",
       },
     ]);
-    const moveCard = useCallback((dragIndex, hoverIndex) => {
-      setCards((prevCards) =>
+    const [haveBooks, setHave] = useState([
+      {
+        id: 1,
+        title: "Harry Potter",
+        url: "https://i.postimg.cc/nzZjM1zF/harryPotter.jpg",
+      },
+    ]);
+    const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {
+      setCurrent((prevCards) =>
         update(prevCards, {
           $splice: [
             [dragIndex, 1],
@@ -38,7 +45,18 @@ const Container = () => {
         })
       );
     }, []);
-    const renderCard = useCallback((book, index) => {
+
+    const moveHaveCard = useCallback((dragIndex, hoverIndex) => {
+      setHave((prevCards) =>
+        update(prevCards, {
+          $splice: [
+            [dragIndex, 1],
+            [hoverIndex, 0, prevCards[dragIndex]],
+          ],
+        })
+      );
+    }, []);
+    const renderCard = useCallback((book, index, moveCard) => {
       return (
         <Card
           key={book.id}
@@ -51,7 +69,14 @@ const Container = () => {
     }, []);
     return (
       <>
-        <div style={style}>{books.map((book, i) => renderCard(book, i))}</div>
+        <h3>Reading now</h3>
+        <div style={style}>
+          {currentBooks.map((book, i) => renderCard(book, i, moveCurrentCard))}
+        </div>
+        <h3>Have read</h3>
+        <div style={style}>
+          {haveBooks.map((book, i) => renderCard(book, i, moveHaveCard))}
+        </div>
       </>
     );
   }
