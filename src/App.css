@@ -1,18 +1,39 @@
 .App {
   text-align: center;
   background-color: #282c34;
+  
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 27vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+/* this  */
+.Container {
+  display: inline-flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start; /* use this to check & test?!*/
+  align-items: flex-start;
+  align-content: normal;
+  gap: 10px 20px; /* row-gap column gap */
+  
+}
+.Items {
+  order: 0;
+  flex: 1 0 auto;
+  align-self: auto;
+}
+/* to this  */
+
 
 h1 {
   color: #61dafb;
@@ -29,10 +50,7 @@ h2 {
 
 img {
   height: 300px;
-  width: 200px;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 5px;
   
 }

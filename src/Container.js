@@ -28,6 +28,7 @@ const Container = () => {
         title: "4000 Weeks",
         url: "https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg",
       },
+      
     ]);
     const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {
       setCurrent((prevCards) =>
