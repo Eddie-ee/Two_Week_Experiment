@@ -33,17 +33,17 @@ change in Container.js
 /* this  */
 .Container {
   display: inline-flex; 
-  flex-direction: row;
+  flex-direction:row;
   flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: flex-start; /* use this to check & test?!*/
   align-items: flex-start;
   align-content: normal;
   gap: 10px 20px; /* row-gap column gap */
-  
-
-
 }
+
+
+
 .Items {
   order: 0;
   flex: 1 0 auto;

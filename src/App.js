@@ -28,7 +28,7 @@ function App() {
         <header className="App-header">
           <h1>Book App</h1>
         </header>
-        <Container className="Container" />
+        <Container id="container" className="Container" />
       </DndProvider>
     </div>
   );
