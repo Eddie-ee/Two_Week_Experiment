@@ -1,3 +1,18 @@
+/*QUESTIONS:
+
+1. Link .Container AND .Items (in App.css) to affect
+change in Container.js
+
+2. Check if Flexbox (flex-directino: row) now works?
+
+3. How to resize/remove image white borders?
+
+4. 
+
+5. Clarify syntax with images?
+  
+
+*/
 .App {
   text-align: center;
   background-color: #282c34;
@@ -26,6 +41,8 @@
   align-content: normal;
   gap: 10px 20px; /* row-gap column gap */
   
+
+
 }
 .Items {
   order: 0;

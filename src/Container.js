@@ -5,6 +5,7 @@ const style = {
   width: 400,
   
   
+  
 };
 const Container = () => {
   {
@@ -12,23 +13,20 @@ const Container = () => {
       {
         id: 1,
         title: "Dune",
-        url: "https://i.postimg.cc/nzZjM1zF/dunebook.jpg",
+        url: "https://i.postimg.cc/DzWv6S5Q/dunebook.jpg",
       },
       {
         id: 2,
         title: "Behave",
-        url: "https://i.postimg.cc/zGF18w9S/behave-Book.jpg",
+        url: "https://i.postimg.cc/0bCM7cCX/behave-Book.jpg",
       },
-      
-      
     ]);
     const [haveBooks, setHave] = useState([
       {
         id: 1,
         title: "4000 Weeks",
-        url: "https://i.postimg.cc/XNsRH79x/four-Thousand-Weeksbook.jpg",
+        url: "https://i.postimg.cc/BQnFW0nR/four-Thousand-Weeksbook.jpg",
       },
-      
     ]);
     const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {
       setCurrent((prevCards) =>
