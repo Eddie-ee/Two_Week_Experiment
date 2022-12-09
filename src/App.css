@@ -15,7 +15,6 @@ change in Container.js
 .App {
   text-align: center;
   background-color: #282c34;
-  
 }
 
 .App-header {
@@ -30,25 +29,41 @@ change in Container.js
 }
 
 /* this  */
-.Container {
-  display: inline-flex; 
-  flex-direction:row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-start; /* use this to check & test?!*/
-  align-items: flex-start;
-  align-content: normal;
-  gap: 10px 20px; /* row-gap column gap */
+.room {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+.currentBookCase {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 
-.Items {
-  order: 0;
-  flex: 1 0 auto;
-  align-self: auto;
+  width: 50%;
 }
+.haveBookCase {
+  background-color: red;
+  width: 50%;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  align-items: center;
+  border: 1px grey solid;
+  color: black;
+  background-color: white;
+  font-size: 34px;
+  font-weight: bold;
+}
+
 /* to this  */
-
 
 h1 {
   color: #61dafb;
@@ -58,23 +73,16 @@ h1 {
 h2 {
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font: weight 700px;;
+  font: weight 700px;
   font-size: xx-large;
 }
-
 
 img {
   height: 300px;
   margin-top: 0px;
   margin-bottom: 5px;
-  
 }
-
-
-
-
 
 .App-link {
   color: #61dafb;
 }
-

@@ -1,12 +1,7 @@
 import update from "immutability-helper";
 import { useCallback, useState } from "react";
 import { Card } from "./Card.js";
-const style = {
-  width: 400,
-  
-  
-  
-};
+
 const Container = () => {
   {
     const [currentBooks, setCurrent] = useState([
@@ -61,16 +56,16 @@ const Container = () => {
       );
     }, []);
     return (
-      <>
+      <div className="room">
         <h2>Reading now</h2>
-        <div style={style}>
+        <div className="currentBookCase">
           {currentBooks.map((book, i) => renderCard(book, i, moveCurrentCard))}
         </div>
         <h2>Have read</h2>
-        <div style={style}>
+        <div className="haveBookCase">
           {haveBooks.map((book, i) => renderCard(book, i, moveHaveCard))}
         </div>
-      </>
+      </div>
     );
   }
 };

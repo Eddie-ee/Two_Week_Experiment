@@ -2,9 +2,6 @@ import { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { ItemTypes } from "./ItemTypes.js";
 const style = {
-  padding: "0.5rem 1rem",
-  marginBottom: ".5rem",
-  backgroundColor: "white",
   cursor: "move",
 };
 export const Card = ({ id, book, index, moveCard }) => {
@@ -67,7 +64,12 @@ export const Card = ({ id, book, index, moveCard }) => {
   const opacity = isDragging ? 0 : 1;
   drag(drop(ref));
   return (
-    <div ref={ref} style={{ ...style, opacity }} data-handler-id={handlerId}>
+    <div
+      className="book"
+      ref={ref}
+      style={{ ...style, opacity }}
+      data-handler-id={handlerId}
+    >
       <img src={book.url} />
       <span>{book.title}</span>
     </div>
