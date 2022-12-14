@@ -7,7 +7,6 @@ change in Container.js
 
 3. How to resize/remove image white borders?
 
-4. Clarify syntax with images?
 
   
 
@@ -25,12 +24,11 @@ change in Container.js
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 /* this  */
 .room {
-  background-color: blue;
+  background-color: #282c34;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,12 +40,19 @@ change in Container.js
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
   width: 50%;
+  background-color:#35393e;
+  border-radius: 5px;
+  padding: 10px;
 }
+
 .haveBookCase {
-  background-color: red;
+  background-color: #35393e;
   width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+
+
 }
 
 .book {
@@ -56,11 +61,14 @@ change in Container.js
   justify-content: center;
   width: 200px;
   align-items: center;
-  border: 1px grey solid;
-  color: black;
-  background-color: white;
-  font-size: 34px;
-  font-weight: bold;
+  color: white;
+  background-color: #35393e;
+  font-size: 19px;
+  font-weight:400;
+  padding: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
 }
 
 /* to this  */
@@ -71,7 +79,10 @@ h1 {
 }
 
 h2 {
-  color: whitesmoke;
+  color: rgb(35, 34, 34);
+  background-color: #4eafca;
+  padding: 7px;
+  border-radius: 7px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: weight 700px;
   font-size: xx-large;
@@ -86,3 +97,5 @@ img {
 .App-link {
   color: #61dafb;
 }
+/*    color: #939798;
+ */
