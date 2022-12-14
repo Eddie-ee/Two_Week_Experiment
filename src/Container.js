@@ -22,6 +22,21 @@ const Container = () => {
         title: "4000 Weeks",
         url: "https://i.postimg.cc/BQnFW0nR/four-Thousand-Weeksbook.jpg",
       },
+      {
+        id: 2,
+        title: "Sprint",
+        url: "https://i.postimg.cc/gJDf9S00/sprint-Book.jpg",
+      },
+      {
+        id: 3,
+        title: "Scrum",
+        url: "https://i.postimg.cc/L6rzzjtC/Scrum-Book.jpg",
+      },
+      {
+        id: 4,
+        title: "Factfulness",
+        url: "https://i.postimg.cc/wxGHgYsN/factfullness-Book.png",
+      },
     ]);
     const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {
       setCurrent((prevCards) =>
@@ -61,7 +76,7 @@ const Container = () => {
         <div className="currentBookCase">
           {currentBooks.map((book, i) => renderCard(book, i, moveCurrentCard))}
         </div>
-        <h2>Have read</h2>
+        <h2 className="haveRead-El">Have read</h2>
         <div className="haveBookCase">
           {haveBooks.map((book, i) => renderCard(book, i, moveHaveCard))}
         </div>

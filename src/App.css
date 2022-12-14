@@ -1,16 +1,4 @@
-/*QUESTIONS:
 
-1. Link .Container AND .Items (in App.css) to affect
-change in Container.js
-
-2. Check if Flexbox (flex-directino: row) now works?
-
-3. How to resize/remove image white borders?
-
-
-  
-
-*/
 .App {
   text-align: center;
   background-color: #282c34;
@@ -26,7 +14,6 @@ change in Container.js
   font-size: calc(10px + 2vmin);
 }
 
-/* this  */
 .room {
   background-color: #282c34;
   display: flex;
@@ -43,16 +30,27 @@ change in Container.js
   width: 50%;
   background-color:#35393e;
   border-radius: 5px;
+  border:#873838 0.1px solid;
   padding: 10px;
 }
 
 .haveBookCase {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 70px;
   background-color: #35393e;
   width: 50%;
   border-radius: 5px;
   padding: 10px;
+  border:#2e7386 0.1px solid;
+}
 
-
+.haveRead-El {
+  background-color: #61dafb;
+  color: #282c34;
 }
 
 .book {
@@ -66,22 +64,20 @@ change in Container.js
   font-size: 19px;
   font-weight:400;
   padding: 5px;
+  margin-bottom: 20px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
 }
 
-/* to this  */
-
 h1 {
-  color: #61dafb;
+  color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
-  color: rgb(35, 34, 34);
-  background-color: #4eafca;
+  color: #282c34;
+  background-color: #cb5656;
   padding: 7px;
+  padding-top: 3px;
   border-radius: 7px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: weight 700px;
@@ -97,5 +93,3 @@ img {
 .App-link {
   color: #61dafb;
 }
-/*    color: #939798;
- */
