@@ -46,13 +46,13 @@ const Container = () => {
 const [toBooks, setTo] = useState([
   {
     id: 1,
-    title: "Dune",
-    url: "https://i.postimg.cc/DzWv6S5Q/dunebook.jpg",
+    title: "Thinking Fast & Slow",
+    url: "https://i.postimg.cc/P5Tfrpk6/Thinking-Fast-Slow-Book.jpg",
   },
   {
     id: 2,
-    title: "Behave",
-    url: "https://i.postimg.cc/0bCM7cCX/behave-Book.jpg",
+    title: "The Fiery Trial",
+    url: "https://i.postimg.cc/Sx5hYD2x/the-Fiery-Trial-Book.jpg",
   },
 ]);
     // TO HERE
