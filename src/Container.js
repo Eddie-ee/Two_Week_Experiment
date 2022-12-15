@@ -1,3 +1,6 @@
+
+/* FROM HERE */
+
 import update from "immutability-helper";
 import { useCallback, useState } from "react";
 import { Card } from "./Card.js";
@@ -38,6 +41,23 @@ const Container = () => {
         url: "https://i.postimg.cc/wxGHgYsN/factfullness-Book.png",
       },
     ]);
+
+    // FROM HERE
+const [toBooks, setTo] = useState([
+  {
+    id: 1,
+    title: "Dune",
+    url: "https://i.postimg.cc/DzWv6S5Q/dunebook.jpg",
+  },
+  {
+    id: 2,
+    title: "Behave",
+    url: "https://i.postimg.cc/0bCM7cCX/behave-Book.jpg",
+  },
+]);
+    // TO HERE
+
+
     const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {
       setCurrent((prevCards) =>
         update(prevCards, {
@@ -59,6 +79,20 @@ const Container = () => {
         })
       );
     }, []);
+
+//FROM HERE
+    const moveToCard = useCallback((dragIndex, hoverIndex) => {
+      setTo((prevCards) =>
+        update(prevCards, {
+          $splice: [
+            [dragIndex, 1],
+            [hoverIndex, 0, prevCards[dragIndex]],
+          ],
+        })
+      );
+    }, []);
+//TO HERE
+    
     const renderCard = useCallback((book, index, moveCard) => {
       return (
         <Card
@@ -80,6 +114,19 @@ const Container = () => {
         <div className="haveBookCase">
           {haveBooks.map((book, i) => renderCard(book, i, moveHaveCard))}
         </div>
+
+        
+{/* from here */}
+        
+        <h2>To read</h2>
+        <div className="toBookCase">
+          {toBooks.map((book, i) => renderCard(book, i, moveToCard))}
+        </div>
+
+        {/* to here */}
+        
+
+
       </div>
     );
   }
