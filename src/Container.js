@@ -54,6 +54,11 @@ const [toBooks, setTo] = useState([
     title: "The Fiery Trial",
     url: "https://i.postimg.cc/Sx5hYD2x/the-Fiery-Trial-Book.jpg",
   },
+  {
+    id: 3,
+    title: "Being Wrong",
+    url: "https://i.postimg.cc/XJvTxTHV/being-Wrong-Book.jpg",
+  },
 ]);
     // TO HERE
 
@@ -106,27 +111,22 @@ const [toBooks, setTo] = useState([
     }, []);
     return (
       <div className="room">
-        <h2>Reading now</h2>
+        <h2>Reading Now</h2>
         <div className="currentBookCase">
           {currentBooks.map((book, i) => renderCard(book, i, moveCurrentCard))}
         </div>
-        <h2 className="haveRead-El">Have read</h2>
+        <h2 className="haveRead-El">Have Read</h2>
         <div className="haveBookCase">
           {haveBooks.map((book, i) => renderCard(book, i, moveHaveCard))}
         </div>
 
-        
-{/* from here */}
-        
-        <h2>To read</h2>
+        {/* from here */}
+        <h2 className="toRead-El">To Read</h2>
         <div className="toBookCase">
           {toBooks.map((book, i) => renderCard(book, i, moveToCard))}
         </div>
-
         {/* to here */}
         
-
-
       </div>
     );
   }

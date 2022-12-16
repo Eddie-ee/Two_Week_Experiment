@@ -27,7 +27,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
+  width: 44.9%;
   background-color:#35393e;
   border-radius: 5px;
   border:#873838 0.1px solid;
@@ -40,9 +40,9 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 5px;
   background-color: #35393e;
-  width: 50%;
+  width: 44.9%;
   border-radius: 5px;
   padding: 10px;
   border:#2e7386 0.1px solid;
@@ -50,6 +50,25 @@
 
 .haveRead-El {
   background-color: #61dafb;
+  color: #282c34;
+}
+
+.toBookCase {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 70px;
+  background-color: #35393e;
+  width: 44.9%;
+  border-radius: 5px;
+  padding: 10px;
+  border:#8e892b 0.1px solid;
+}
+
+.toRead-El {
+  background-color: #F2E94E;
   color: #282c34;
 }
 
