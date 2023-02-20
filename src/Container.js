@@ -42,7 +42,6 @@ const Container = () => {
       },
     ]);
 
-    // FROM HERE
 const [toBooks, setTo] = useState([
   {
     id: 1,
@@ -60,7 +59,7 @@ const [toBooks, setTo] = useState([
     url: "https://i.postimg.cc/XJvTxTHV/being-Wrong-Book.jpg",
   },
 ]);
-    // TO HERE
+  
 
 
     const moveCurrentCard = useCallback((dragIndex, hoverIndex) => {
